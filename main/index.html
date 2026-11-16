@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cat List | Main</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="../cssmain.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    </head>
+    <body style="overflow: hidden; height: 100vh; display: flex; flex-direction: column;">
+        <h1>Cat List</h1>
+        <a href="../index.html" class="backbtn">Back</a>
+        <div id="body" style="height: 85%; overflow-y: scroll; border: 2px solid gray;">
+            <div id="list" style="width: 50%; overflow-y: scroll; overflow-x: hidden; max-height: 100%;">
+                <template id="listentry">
+                    <div class="entry" onclick="alert('No click handler was assigned.')">
+                        <img class="image" src="" alt="" style="height: 140px; margin: 5px; border-radius: 5px;">
+                        <div>
+                            <h2 class="title">Title</h2>
+                            <p class="desc" style="margin: 0px; padding: 0px;">Description</p>
+                            <p class="victors" style="margin: 0px; padding: 0px;">Victors</p>
+                            <p class="points" style="margin: 0px; padding: 0px;">Points</p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div id="view" style="width: 50%; overflow-y: scroll; overflow-x: hidden;">
+                <h1 id="title">(Lvl name)</h1>
+                <img id="img" src="nothumb.png" style="width: 100%; border-radius: 10px;">
+                <p id="desc">(Verifier)<br>(Creator)<br>(Uploader)</p>
+                <p id="points">(Point value)</p>
+                <p id="id">(ID)</p>
+                <p id="date">(Date)</p>
+                <p id="victors">(Victors)</p>
+            </div>
+        </div>
+        <script src="../api.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

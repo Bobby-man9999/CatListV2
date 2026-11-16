@@ -1,40 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Cat List</title>
+        <title>Cat List | Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     </head>
-    <body style="overflow: hidden; height: 100vh; display: flex; flex-direction: column;">
-        <h1>Cat List</h1>
-        <div id="body" style="height: 85%; overflow-y: scroll; border: 2px solid gray;">
-            <div id="list" style="width: 50%; overflow-y: scroll; max-height: 100%;">
-                <template id="listentry">
-                    <div class="entry" onclick="alert('ham')">
-                        <img class="image" src="" alt="" style="height: 140px; margin: 5px; border-radius: 5px;">
-                        <div>
-                            <h2 class="title">Title</h2>
-                            <p class="desc">Description</p>
-                        </div>
-                    </div>
-                </template>
-            </div>
-            <div id="view" style="width: 50%; overflow: scroll;">
-                <h1 id="title">(Lvl name)</h1>
-                <img id="img" src="nothumb.png" style="width: 100%; border-radius: 10px;">
-                <p id="desc">(Verifier) | (Creator)</p>
-                <p id="id">(ID)</p>
-                <p id="date">(Date)</p>
-                <p id="victors">(Victors)</p>
-            </div>
-        </div>
-        <div id="footer">
-            <p>Site Version: 26.1.1</p>
-            <button style="width: 25px; height: 25px; border-radius: 25px; border: 2px solid grey;" onclick="alert('Version format: year.version.preview\nYear is the year the update released\nVersion is the number release of that year\nPreview is the number preview of said version\n\nThat was a terrible explanation\nTODO: Fix ts :sob:')">?</button>
-        </div>
-        <script src="api.js"></script>
-        <script src="script.js"></script>
+    <body>
+        <h1>Cat List Homepage</h1>
+        <a href="main/index.html">Main List</a>
+        <a href="stats/index.html">Leaderboard</a>
+        <a href="games/index.html">Games (Placeholder)</a>
+        <p style="position: fixed; margin: 0px; padding: 0px; bottom: 5px; left: 5px;">Version 26.1.2</p>
     </body>
 </html>
