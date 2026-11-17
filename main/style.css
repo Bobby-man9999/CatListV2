@@ -29,6 +29,13 @@ html {
     border-radius: 5px;
 }
 
+#list {
+    background-color: purple;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
 #body {
     display: flex;
     flex-direction: row;

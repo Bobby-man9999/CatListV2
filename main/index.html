@@ -11,7 +11,7 @@
     <body style="overflow: hidden; height: 100vh; display: flex; flex-direction: column;">
         <h1>Cat List</h1>
         <a href="../index.html" class="backbtn">Back</a>
-        <div id="body" style="height: 85%; overflow-y: scroll; border: 2px solid gray;">
+        <div id="body" style="height: 85%; overflow-y: scroll;">
             <div id="list" style="width: 50%; overflow-y: scroll; overflow-x: hidden; max-height: 100%;">
                 <template id="listentry">
                     <div class="entry" onclick="alert('No click handler was assigned.')">
@@ -25,9 +25,9 @@
                     </div>
                 </template>
             </div>
-            <div id="view" style="width: 50%; overflow-y: scroll; overflow-x: hidden;">
+            <div id="view" style="transition: transform 0.3s ease, opacity 0.3s ease; width: 50%; overflow-y: scroll; overflow-x: hidden;">
                 <h1 id="title">(Lvl name)</h1>
-                <img id="img" src="nothumb.png" style="width: 100%; border-radius: 10px;">
+                <img id="img" src="" style="width: 100%; border-radius: 10px;">
                 <p id="desc">(Verifier)<br>(Creator)<br>(Uploader)</p>
                 <p id="points">(Point value)</p>
                 <p id="id">(ID)</p>

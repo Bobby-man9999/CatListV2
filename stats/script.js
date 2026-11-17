@@ -21,6 +21,6 @@ getList().then(res => {
 }).then(res => {
     const players = Object.entries(res).filter(([player]) => player.trim() !== "").sort(([, a], [, b]) => b - a);
     players.forEach(([player, score], idx) => {
-        document.getElementById('leaderboard').innerHTML += `<a href="player/index.html?p=${player}">#${idx+1}: ${player} (${Math.floor(score*100)/100})</a><br><br>` 
+        document.getElementById('leaderboard').innerHTML += `<a href="player/index.html?p=${player}">#${idx+1}: ${player} (${Math.floor(score*100)/100})</a>` 
     });
 })
