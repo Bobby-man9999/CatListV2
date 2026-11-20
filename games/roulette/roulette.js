@@ -26,7 +26,7 @@ function next(p) {
     }
     if (Math.floor(p) >= Math.floor(percent)) {
         if (document.getElementById('controls')) {
-            document.getElementById('controls').parentNode.parentNode.querySelector('.preq').innerText = `Finished with ${p}%, needed ${percent+1}%`
+            document.getElementById('controls').parentNode.parentNode.querySelectorAll('.preq')[document.getElementById('controls').parentNode.parentNode.querySelectorAll('.preq').length-1].innerText = `Finished with ${p}%, needed ${percent+1}%`
             document.getElementById('controls').remove()
         };
         percent = p

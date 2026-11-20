@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cat List | Home</title>
+        <title>Cat List | Landing</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     </head>
     <body>
-        <h1>Cat List Homepage</h1>
-        <div>
-            <a href="main/index.html">Main List</a>
-            <a href="packs/index.html">Level Packs</a>
-            <a href="stats/index.html">Leaderboard</a>
-            <a href="games/index.html">Games</a>
-        </div>
+        <h1>Cat List Landing Page</h1>
         <p>More coming Soon™</p>
-        <p style="position: fixed; margin: 0px; padding: 0px; bottom: 5px; left: 5px;">Version 26.1.3</p>
+        <div class="top">
+            <div>
+                <p id="quote">QUOTE OF THE DAY:<br>Loading...</p>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <p>Navigation:</p>
+                <a href="main/index.html">Main List</a>
+                <a href="packs/index.html">Level Packs</a>
+                <a href="stats/index.html">Leaderboard</a>
+                <a href="games/index.html">Games</a>
+            </div>
+            <div>
+                <p>Recent List Changes:</p>
+                <p id="changes">(Loading)</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div>
+                <p id="topp">Top player: (Loading)</p>
+                <p id="topl">Top 1: (Loading)</p>
+                <p id="llen">List length: (Loading)</p>
+            </div>
+            <div>
+                <p>Next update features:</p>
+                <p>Finishing the rest of the 26.1 p4 features (GD 2.2/2.21 reference?)</p>
+            </div>
+            <div>
+                <p>External links</p>
+                <a href="https://github.com/bobby-man9999/CatListV2" target="_blank">Github</a>
+                <a href="https://docs.google.com/spreadsheets/d/1NhMUbj2lYPs6m4Qm_PbStxWXlG3le-pWP5jFS3_uvmY/edit?usp=sharing" target="_blank">Google Sheet</a>
+                <a id="wheel" href="index.html" target="_blank">Full Wheel</a>
+                <a href="https://forms.gle/puftFajxJW6LFwHd8" target="_blank">Report/Suggest</a>
+            </div>
+        </div>
+        <p style="position: fixed; margin: 0px; padding: 0px; bottom: 5px; left: 5px;">Version 26.1 p4</p>
+        <script src="api.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
